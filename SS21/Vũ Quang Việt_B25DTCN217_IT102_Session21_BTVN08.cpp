@@ -42,7 +42,7 @@ void displayMenu(Product *sp, int length){
 	}
 	printf("======================= Danh sach san pham ======================");
 	for(int i=0;i<length;i++){
-		printf("\nID: %d | Ten: %s | Gia nhap: %.2f | Gia bán: %.2f | So luong: %d \n",
+		printf("\nID: %d | Ten: %s | Gia nhap: %.2f | Gia ban: %.2f | So luong: %d \n",
 		        sp[i].id,sp[i].name,sp[i].importPrice,sp[i].exportPrice,sp[i].stock);
 	}
 }
@@ -139,8 +139,8 @@ void search(Product *sp,int length){
 	for(int i=0;i<length ;i++){
 		if(strcmp(sp[i].name, name) == 0){
 			printf("Tim thay san pham : \n");
-			printf("ID : %d | Name : %s | Import : %.2f | Export : %.2f | Stock : %d \n",
-			    sp[i].id ,sp[i].name,sp[i].importPrice,sp[i].exportPrice,sp[i].stock);
+			printf("\nID: %d | Ten: %s | Gia nhap: %.2f | Gia ban: %.2f | So luong: %d \n",
+		        sp[i].id,sp[i].name,sp[i].importPrice,sp[i].exportPrice,sp[i].stock);
 				return ;
 		}
 	}
@@ -243,3 +243,4 @@ int main(){
 		}
 	}while(choice!=9);
 }
+
