@@ -42,7 +42,7 @@ void displayMenu(Product *sp, int length){
 	}
 	printf("======================= Danh sach san pham ======================");
 	for(int i=0;i<length;i++){
-		printf("\nID: %d | Ten: %s | Gia nhap: %.2f | Gia bán: %.2f | So luong: %d \n",
+		printf("\nID: %d | Ten: %s | Gia nhap: %.2f | Gia bÃ¡n: %.2f | So luong: %d \n",
 		        sp[i].id,sp[i].name,sp[i].importPrice,sp[i].exportPrice,sp[i].stock);
 	}
 }
@@ -162,7 +162,7 @@ void sellProduct(Product *sp, int length ,float *revenue){
 				sp[i].stock -= quantity ;
 				*revenue += (sp[i].exportPrice * quantity);
 				if(sp[i].stock == 0){
-					printf("Sau khi ban xong thì san pham nay het hang \n");
+					printf("Sau khi ban xong thÃ¬ san pham nay het hang \n");
 				}
 				return ;
 			}
